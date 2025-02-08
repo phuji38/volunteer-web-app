@@ -39,3 +39,10 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  .interior { /* for space on sides of website content [must add class manually] */
+    max-width: 1200px;
+    margin: 0px auto;
+    /* flexbox */
+    display: flex;
+}
