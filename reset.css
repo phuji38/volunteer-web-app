@@ -9,6 +9,9 @@
   body {
     line-height: 1.5;   /* line height - i.e. vertical space between lines. may need to decrease for large sizes */
     -webkit-font-smoothing: antialiased;
+
+    overflow: -moz-scrollbars-vertical;   /* forces scrollbar */
+    overflow-y: scroll;
   }
 
   img, picture, video, canvas, svg {

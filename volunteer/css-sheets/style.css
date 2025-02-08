@@ -9,6 +9,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* WEB PAGE */
+
 #header {
     height: 60px;
 
@@ -27,6 +29,12 @@ body {
 #software-name {
     color: #fafafa;
     margin-left: 8px;
+}
+
+#main-page {
+    min-height: 80dvh;
+    padding-top: 24px;
+    display: block;
 }
 
 #footer {
