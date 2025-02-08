@@ -1,17 +1,23 @@
 @font-face {
     font-family: Bayon;
-    src: url(../Bayon-Regular.ttf) format('truetype');
+    src: url(../../Bayon-Regular.ttf) format('truetype');
 }
 
 body {
+    width: 100%;
     background-color: #fafafa;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    background: none;
+    border: none;
 }
 
 #header {
     height: 60px;
 
-    background-color: #f39600; /* For browsers that do not support gradients */
+    background-color: #f39600; /* for browsers that do not support gradients */
     background-image: linear-gradient(to right, #ec660c , #f39600);
 }
 
@@ -23,13 +29,33 @@ body {
     align-items: center;
 }
 
-a {
-    background: none;
-    border: none;
+#software-name {
+    color: #fafafa;
+    margin-left: 8px;
 }
 
 #main-page {
-    background-color: red;
+    min-height: 80dvh;
+    padding-top: 24px;
+    display: block;
+}
+
+#notif-alert {
+    padding-right: 16px;
+}
+
+#footer {
+    height: 120px;
+    margin-top: 24px;
+    background-color: #1f1b1b;
+}
+
+#footer-content {
+    height: 120px;
+    
+    /* flexbox */
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* CLASSES */
@@ -40,9 +66,43 @@ a {
 
 .flex {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon-button {
+.bayon-font {
+    color: #ec660c;
+    font-family: Bayon;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.icon-size {
+    height: 28px;
+}
+
+.row {
+    width: 100%;
+    /* background-color: green; */
+}
+
+.notice {
+    /* background-color: green; */
+    border-top: solid #d9d9d9 2px;
+    padding: 24px 60px 24px 16px;
+}
+
+.hidden {   /* hides item but keeps the space it takes up */
+    visibility: hidden;
+}
+
+.shortened {    /* to shorten notice text */
+    height: 74px;
+    overflow: hidden;
+}
+
+
+.icon-button, .icon-button-black {
     height: 44px;
     width: 44px;
 
@@ -59,9 +119,7 @@ a {
     background-color: #ec660c;
 }
 
-.bayon-font {
-    font-family: Bayon;
-    font-size: 40px;
-
-    /* WIP: LINEAR GRADIENT ON TEXT */
+.icon-button-black:hover {
+    cursor: pointer;
+    background-color: #302a2a;
 }

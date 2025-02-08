@@ -32,6 +32,10 @@
     text-wrap: pretty;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
@@ -43,6 +47,4 @@
   .interior { /* for space on sides of website content [must add class manually] */
     max-width: 1200px;
     margin: 0px auto;
-    /* flexbox */
-    display: flex;
 }
