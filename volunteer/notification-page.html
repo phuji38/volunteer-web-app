@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../reset.css" rel="stylesheet"> <!-- resets css -->
-    <link href="notification-style.css" rel="stylesheet"> <!-- stylesheet -->
+    <link href="css-sheets/notification-style.css" rel="stylesheet"> <!-- stylesheet -->
     <title>Notifications</title>
 
 </head>
@@ -16,13 +16,13 @@
     <!-- HEADER -->
     <div id="header">   <!-- orange background -->
 
-        <div id="header-content" class="interior">
+        <div id="header-content" class="interior">  <!-- space on sides of logo + buttons -->
 
-            <img src="../icons-images/smile.svg" alt="Logo.">
+            <a href="volunteer-dashboard.html"> <img src="../icons-images/smile.svg" alt="Logo."> </a>
 
-            <div>
-                <button id="notifications" class="icon-button"><img class="icon center" src="../icons-images/bell.svg" alt="Notifications button."></button>
-                <button id="profile" class="icon-button"><img class="icon center" src="../icons-images/user.svg" alt="User profile button."></button>
+            <div class="flex">
+                <a href="notification-page.html" class="icon-button"> <img class="icon center" src="../icons-images/bell.svg" alt="Notifications button."> </a>
+                <a href="" class="icon-button"> <img class="icon center" src="../icons-images/user.svg" alt="Notifications button."> </a> <!-- TODO: add page link -->
             </div>
 
         </div>

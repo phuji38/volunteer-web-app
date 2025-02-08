@@ -23,7 +23,7 @@ body {
     align-items: center;
 }
 
-button {
+a {
     background: none;
     border: none;
 }
@@ -38,11 +38,20 @@ button {
     margin: 0px auto;
 }
 
+.flex {
+    display: flex;
+}
+
 .icon-button {
     height: 44px;
     width: 44px;
 
     border-radius: 100%;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-button:hover {
