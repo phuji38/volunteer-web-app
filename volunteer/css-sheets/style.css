@@ -29,6 +29,7 @@ body {
 #software-name {
     color: #fafafa;
     margin-left: 8px;
+    font-size: 28px;
 }
 
 #main-page {
@@ -77,12 +78,6 @@ body {
 .row {
     width: 100%;
     /* background-color: green; */
-}
-
-.notice {
-    /* background-color: green; */
-    border-top: solid #d9d9d9 2px;
-    padding: 24px 60px 24px 16px;
 }
 
 
