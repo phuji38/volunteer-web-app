@@ -71,13 +71,28 @@ body {
     font-weight: lighter;
 }
 
+.grayText {
+    color: #989898;
+}
+
 .icon-size {
     height: 28px;
 }
 
 .row {
     width: 100%;
-    /* background-color: green; */
+}
+
+.spacing-top {
+    padding-top: 24px;
+}
+
+.spacing-bottom {
+    padding-bottom: 24px;
+}
+
+.highlight:hover {
+    cursor: pointer;
 }
 
 
