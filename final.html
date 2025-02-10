@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management Form</title>
+    <link rel="stylesheet" href="final.css" />
+  </head>
+  <body>
+    <!-- Title Card/Header -->
+    <header class="title-card">
+      <h1>Event Management System</h1>
+    </header>
+
+    <!-- Form Container -->
+    <div class="form-page">
+      <!-- Event Management Form -->
+      <div class="form-section">
+        <h2 class="form-title" onclick="toggleForm('event-form')">
+          Create & Manage Events
+        </h2>
+        <form id="event-form" class="form-content">
+          <label for="event-name">Event Name</label>
+          <input
+            type="text"
+            id="event-name"
+            name="event-name"
+            maxlength="100"
+            required
+          />
+
+          <label for="event-description">Event Description</label>
+          <textarea
+            id="event-description"
+            name="event-description"
+            required
+          ></textarea>
+
+          <label for="location">Location</label>
+          <textarea id="location" name="location" required></textarea>
+
+          <label for="required-skills">Required Skills</label>
+          <select id="required-skills" name="required-skills" multiple required>
+            <option value="communication">Communication</option>
+            <option value="leadership">Leadership</option>
+            <option value="technical">Technical Skills</option>
+            <option value="organization">Organization</option>
+          </select>
+
+          <label for="urgency">Urgency</label>
+          <select id="urgency" name="urgency" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <label for="event-date">Event Date</label>
+          <input type="date" id="event-date" name="event-date" required />
+
+          <button type="submit">Create Event</button>
+        </form>
+      </div>
+
+      <!-- Volunteer Matching Form -->
+      <div class="form-section">
+        <h2 class="form-title" onclick="toggleForm('matching-form')">
+          Match Volunteers to Events
+        </h2>
+        <form id="matching-form" class="form-content">
+          <label for="volunteer-name">Volunteer Name</label>
+          <input
+            type="text"
+            id="volunteer-name"
+            name="volunteer-name"
+            readonly
+            placeholder="Auto-fill from database"
+          />
+
+          <label for="matched-event">Matched Event</label>
+          <input
+            type="text"
+            id="matched-event"
+            name="matched-event"
+            readonly
+            placeholder="Auto-fill based on profile"
+          />
+
+          <button type="submit">Match Volunteer</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function toggleForm(formId) {
+        const formContent = document.getElementById(formId);
+        formContent.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

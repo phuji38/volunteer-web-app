@@ -1,0 +1,140 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #ec660c, #f39600);
+  background-attachment: fixed;
+}
+
+/* Title Card */
+.title-card {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.title-card h1 {
+  font-size: 24px;
+  color: #ec660c;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Gradient Background */
+.gradient-background {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Container */
+.form-page {
+  width: 400px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 120px auto 50px; /* Adjust margin to avoid overlap with fixed header */
+  text-align: center;
+}
+
+/* Section Titles */
+.form-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Form Content */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Inputs, Textareas, Selects */
+input[type="text"],
+textarea,
+select,
+input[type="date"],
+button {
+  width: 100%; /* Make all form elements take full container width */
+  max-width: 400px; /* Ensure consistent width across all elements */
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Consistent padding handling */
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ec660c;
+  box-shadow: 0 0 4px rgba(255, 123, 54, 0.4);
+}
+
+/* Multi-select */
+select[multiple] {
+  height: 120px;
+}
+
+/* Textarea */
+textarea {
+  height: auto;
+  overflow: hidden;
+  resize: none;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #ec660c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #f39600;
+}
