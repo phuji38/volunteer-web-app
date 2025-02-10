@@ -24,17 +24,3 @@
     background-color: #fafafa;
     color: #ec660c;
 }
-
-/* CLASSES */
-
-.spaced {
-    justify-content: space-between;
-}
-
-.spacing-top {
-    padding-top: 24px;
-}
-
-.spacing-bottom {
-    padding-bottom: 24px;
-}
