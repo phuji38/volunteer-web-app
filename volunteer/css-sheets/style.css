@@ -38,14 +38,13 @@ button {
 }
 
 #main-page {
-    min-height: 80dvh;
+    min-height: 85dvh;
     padding-top: 24px;
     display: block;
 }
 
 #footer {
-    height: 120px;
-    margin-top: 24px;
+    /* margin-top: 24px; */
     background-color: #1f1b1b;
 }
 
@@ -78,6 +77,15 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+
+    margin-right: 16px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .bayon-font {

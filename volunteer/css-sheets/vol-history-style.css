@@ -18,12 +18,3 @@
     padding: 24px 60px 24px 60px;
     align-items: flex-start;
 }
-
-.thumbnail {
-    width: 200px;
-    height: 200px;
-
-    margin-right: 16px;
-    object-fit: cover;
-    border-radius: 8px;
-}
