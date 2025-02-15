@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin_dashboard.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="admin_dashboard.js"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Admin Profile -->
+        <div class="admin-header">
+            <img src="images/logo.svg" alt="Admin Logo" class="admin-logo">
+            <div>
+                <h2>Admin Dashboard</h2>
+                <p id="current-time"></p>
+            </div>
+        </div>
+
+        <!-- Dashboard Stats -->
+        <div class="stats">
+            <div class="card">
+                <h3>📅 Events</h3>
+                <p>10 Scheduled</p>
+            </div>
+            <div class="card">
+                <h3>🤝 Volunteers</h3>
+                <p>34 Active</p>
+            </div>
+            <div class="card">
+                <h3>💰 Economic Impact</h3>
+                <p>$4,477.53</p>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts">
+            <div class="chart-container">
+                <h3>📊 Event Attendance</h3>
+                <canvas id="eventChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>📈 Volunteer Activity</h3>
+                <canvas id="volunteerChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Dashboard Buttons -->
+        <div class="dashboard-buttons">
+            <button onclick="redirectTo('event_management.html')">📅 Manage Events</button>
+            <button onclick="redirectTo('volunteer_matching.html')">🤝 Match Volunteers</button>
+            <button onclick="redirectTo('settings.html')" class="notification">
+                ⚙️ Settings <span class="badge">!</span>
+            </button>
+            <button class="logout-btn" onclick="redirectTo('login.html')">🚪 Logout</button>
+        </div>
+    </div>
+
+</body>
+</html>
