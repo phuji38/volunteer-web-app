@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff8c00, #ff6b00);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo */
+.admin-logo {
+    width: 100px;
+    height: auto;
+    filter: invert(55%) sepia(90%) saturate(600%) hue-rotate(0deg) brightness(105%) contrast(100%);
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+    width: 60%;
+    margin: 3% auto; /* Reduce from 5% to 3% */
+    background: white;
+    color: black;
+    padding: 20px; /* Reduce padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Admin Profile */
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px; /* Reduce space below logo */
+    margin-top: -10px; /* Move logo & title up */
+}
+
+.admin-header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Current Date & Time */
+#current-time {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Stats Cards (Smaller) */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Reduce spacing */
+    margin-bottom: 15px; /* Reduce margin */
+}
+
+.card {
+    background: #ff6b00;
+    color: white;
+    padding: 10px; /* Reduce padding */
+    border-radius: 8px;
+    width: 100px; /* Reduce width */
+    text-align: center;
+    font-size: 14px; /* Reduce text size */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly smaller hover effect */
+}
+
+/* Charts (Smaller) */
+.charts {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Reduce space between charts */
+    margin-bottom: 20px; /* Reduce bottom margin */
+}
+
+.chart-container {
+    background: white;
+    padding: 15px; /* Reduce padding */
+    border-radius: 10px;
+    width: 35%; /* Reduce width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Headings */
+.chart-container h3 {
+    font-size: 16px; /* Reduce heading size */
+    margin-bottom: 10px;
+}
+/* Dashboard Buttons */
+.dashboard-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    background: linear-gradient(to right, #ff6b00, #ff4500);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4500, #ff6b00);
+    transform: scale(1.05);
+}
+
+/* Notification Badge */
+.notification {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: linear-gradient(to right, #ff6b00, #ff4500)
+}
+
+.logout-btn:hover {
+    background: linear-gradient(to right, #ff4500, #ff6b00);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
