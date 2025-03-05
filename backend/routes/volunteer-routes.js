@@ -38,4 +38,4 @@ router.put('/notifications', createNotification);
 
 // Exporting
 
-module.exports = router;
+Module.exports = router;
