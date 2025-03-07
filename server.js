@@ -18,7 +18,7 @@ const apiEndpoints = require("./backend/api/loginRoutes.js");
 app.use("/api", apiEndpoints);
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "frontend", "Login", "index.html"));
+    res.sendFile(path.join(__dirname, "frontend", "Login", "index.html", "sign-up.html"));
 });
 
 app.use((req, res) => {

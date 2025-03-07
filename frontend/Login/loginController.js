@@ -4,24 +4,21 @@ let users = []; // In-memory storage for users (for demo purposes)
 exports.signUpUser = (req, res) => {
     const { firstName, lastName, email, password } = req.body;
 
-    // Check if all required fields are provided
     if (!firstName || !lastName || !email || !password) {
         return res.status(400).json({ message: "All fields are required" });
     }
 
-    // Check if the email already exists
     const existingUser = users.find(user => user.email === email);
     if (existingUser) {
         return res.status(400).json({ message: "Email already registered" });
     }
 
-    // Add the new user to the in-memory users array
     const newUser = {
         id: users.length + 1,
         firstName,
         lastName,
         email,
-        password, // In a real app, make sure to hash the password before saving
+        password, 
     };
 
     users.push(newUser);
